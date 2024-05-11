@@ -1,6 +1,9 @@
+'use client'
+import { useTheme } from "@/state/ThemeContext";
 import Image from "next/image";
 
 export default function Footer() {
+  const { theme } = useTheme();
   return (
     <footer className="p-4 sm:p-6 border-t border-black dark:border-white bg-secondary-50 dark:bg-primary-800">
       <div className="mx-auto max-w-screen-xl">
@@ -8,11 +11,15 @@ export default function Footer() {
           <div className="mb-6 md:mb-0 flex justify-center md:justify-start">
             <a href="#" className="flex items-center">
               <Image
-                src="/logo.png"
+                src={
+                  theme === "dark"
+                    ? "/images/logos/blanco.png"
+                    : "/images/logos/negro.png"
+                }
                 className="mr-3 h-8"
                 alt="Logo"
-                width={40}
-                height={40}
+                width={50}
+                height={50}
               />
               <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
                 Evan Styles
@@ -142,7 +149,7 @@ export default function Footer() {
               href="https://flowbite.com"
               className="hover:underline text-black dark:text-white"
             >
-              Evan Styles ™
+              Evan Styles ™ {''}
             </a>
             | Todos los derechos reservados | Desarrollado por
             <a
@@ -150,7 +157,8 @@ export default function Footer() {
               className="hover:underline font-bold text-black dark:text-white"
               target="_blank"
             >
-              {' '}Santiago Salas.
+              {" "}
+              Santiago Salas.
             </a>
           </span>
         </div>

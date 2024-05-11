@@ -1,12 +1,14 @@
+'use client'
 import Image from "next/image";
 import ThemeToggleButton from "./ThemToggleButton";
+import { useTheme } from "@/state/ThemeContext";
 
 const links = [
   { href: "#servicios", text: "Servicios" },
-  { href: "#nosotros", text: "Nosotros" },
 ];
 
 export default function Header() {
+  const { theme } = useTheme();
   return (
     <header className="fixed top-0 left-0 z-10 flex justify-between items-center py-5 w-full px-5 lg:px-32 xl:px-40 bg-secondary-50 dark:bg-primary-800 shadow-md">
       <a href="#">
@@ -14,7 +16,7 @@ export default function Header() {
           width={40}
           height={40}
           alt="Evan Styles - Logo"
-          src="/logo.png"
+          src={theme === "dark" ? "/images/logos/blanco.png" : "/images/logos/negro.png"}
         ></Image>
       </a>
       <nav className="flex flex-row gap-x-4 text-sm sm:text-base">
