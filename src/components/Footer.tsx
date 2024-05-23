@@ -1,6 +1,7 @@
-'use client'
+"use client";
 import { useTheme } from "@/state/ThemeContext";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   const { theme } = useTheme();
@@ -9,7 +10,7 @@ export default function Footer() {
       <div className="mx-auto max-w-screen-xl">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0 flex justify-center md:justify-start">
-            <a href="#" className="flex items-center">
+            <Link href="#" className="flex items-center">
               <Image
                 src={
                   theme === "dark"
@@ -24,7 +25,7 @@ export default function Footer() {
               <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
                 Evan Styles
               </span>
-            </a>
+            </Link>
           </div>
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 justify-center md:justify-between text-center md:text-left">
             <div>
@@ -33,21 +34,21 @@ export default function Footer() {
               </h2>
               <ul className="">
                 <li className="mb-4">
-                  <a
+                  <Link
                     href="#servicios"
                     className="hover:underline text-black dark:text-white"
                   >
                     Servicios
-                  </a>
+                  </Link>
                 </li>
-                <li>
-                  <a
+                {/* <li>
+                  <Link
                     href="#nosotros"
                     className="hover:underline text-black dark:text-white"
                   >
                     Nosotros
-                  </a>
-                </li>
+                  </Link>
+                </li> */}
               </ul>
             </div>
             <div>
@@ -56,22 +57,22 @@ export default function Footer() {
               </h2>
               <ul className=" ">
                 <li className="mb-4">
-                  <a
+                  <Link
                     href="https://www.tiktok.com/@evanstyless"
                     className="hover:underline text-black dark:text-white"
                     target="_blank"
                   >
                     TikTok
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="https://www.instagram.com/evanstyless/"
                     className="hover:underline text-black dark:text-white"
                     target="_blank"
                   >
                     Instagram
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -81,20 +82,20 @@ export default function Footer() {
               </h2>
               <ul className=" ">
                 <li className="mb-4">
-                  <a
-                    href="tel:+573214223931"
+                  <Link
+                    href="tel:+573507505606"
                     className="hover:underline text-black dark:text-white"
                   >
                     +57 3507505606
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     href="mailto:evanstyles@gmail.com"
                     className="hover:underline text-black dark:text-white"
                   >
                     evanstyles@gmail.com
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -103,7 +104,7 @@ export default function Footer() {
         <hr className="my-6 border-black sm:mx-auto dark:border-white lg:my-8" />
         <div className="sm:flex sm:items-center sm:justify-between sm:flex-row-reverse text-center">
           <div className="flex mb-3 space-x-6 justify-center sm:mt-0">
-            <a
+            <Link
               href="https://www.tiktok.com/@evanstyless"
               className="text-black dark:text-primary-400 hover:text-primary-950"
               target="_blank"
@@ -123,8 +124,8 @@ export default function Footer() {
                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                 <path d="M21 7.917v4.034a9.948 9.948 0 0 1 -5 -1.951v4.5a6.5 6.5 0 1 1 -8 -6.326v4.326a2.5 2.5 0 1 0 4 2v-11.5h4.083a6.005 6.005 0 0 0 4.917 4.917z" />
               </svg>
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://www.instagram.com/evanstyless/"
               className="text-black dark:text-primary-400 hover:text-primary-950"
               target="_blank"
@@ -141,25 +142,25 @@ export default function Footer() {
                   clip-rule="evenodd"
                 />
               </svg>
-            </a>
+            </Link>
           </div>
           <span className="mb-3 text-sm sm:text-center text-black dark:text-white">
             © 2024
-            <a
+            <Link
               href="https://flowbite.com"
               className="hover:underline text-black dark:text-white"
             >
-              Evan Styles ™ {''}
-            </a>
+              Evan Styles ™ {""}
+            </Link>
             | Todos los derechos reservados | Desarrollado por
-            <a
+            <Link
               href="https://santiagosalas.com"
               className="hover:underline font-bold text-black dark:text-white"
               target="_blank"
             >
               {" "}
               Santiago Salas.
-            </a>
+            </Link>
           </span>
         </div>
       </div>

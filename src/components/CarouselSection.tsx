@@ -26,7 +26,7 @@ export default function CarouselSection() {
   return (
     <div className="relative w-full overflow-hidden" data-carousel="static">
       <div
-        className="relative h-[600px] flex transition-transform duration-500 ease-in-out"
+        className="relative h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] flex transition-transform duration-500 ease-in-out"
         style={{ transform: `translateX(-${activeIndex * 100}%)` }}
       >
         {images.map((src, index) => (
@@ -71,7 +71,7 @@ export default function CarouselSection() {
         className="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
         onClick={goToNextSlide}
       >
-        <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-secondary-50/50 dark:bg-secondary-900/50 group-hover:bg-secondary-50/80 dark:group-hover:bg-secondary-900/80 group-focus:ring-4 group-focus:ring-secondary-900/50 dark:group-focus:ring-secondary-50/50  group-focus:outline-none">
+        <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-secondary-50/50 dark:bg-secondary-900/50 group-hover:bg-secondary-50/80 dark:group-hover:bg-secondary-900/80 group-focus:ring-4 group-focus:ring-secondary-900/50 dark:group-focus:ring-secondary-50/50 group-focus:outline-none">
           <svg
             className="w-4 h-4 text-secondary-900 dark:text-secondary-50 rtl:rotate-180"
             aria-hidden="true"
