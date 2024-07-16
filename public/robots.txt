@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://evanstyles.com
+
+# Sitemaps
+Sitemap: https://evanstyles.com/sitemap.xml

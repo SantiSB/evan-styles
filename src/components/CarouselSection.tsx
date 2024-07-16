@@ -30,14 +30,17 @@ export default function CarouselSection() {
         style={{ transform: `translateX(-${activeIndex * 100}%)` }}
       >
         {images.map((src, index) => (
-          <div key={index} className="flex-none w-full" data-carousel-item>
+          <div
+            key={index}
+            className="relative flex-none w-full h-full"
+            data-carousel-item
+          >
             <Image
-              width={1920}
-              height={1080}
               src={src}
-              className="block w-full h-full object-cover object-center"
+              layout="fill"
+              className="object-cover object-center"
               alt="Property Image"
-              loading="lazy"
+              loading={index === 0 ? "eager" : "lazy"} // Carga diferida solo para la primera imagen
             />
           </div>
         ))}
