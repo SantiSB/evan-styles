@@ -8,9 +8,9 @@ export default function CarouselSection() {
   const images = [
     "/images/carousel/carousel1.webp",
     "/images/carousel/carousel4.webp",
-    "/images/carousel/carousel3.webp",
     "/images/carousel/carousel2.webp",
     "/images/carousel/carousel5.webp",
+    "/images/carousel/carousel3.webp",
   ];
 
   const goToPrevSlide = () => {

@@ -115,7 +115,7 @@ export default function Footer() {
               <InstagramIcon />
             </Link>
           </div>
-          <span className="mb-3 text-sm sm:text-center text-black dark:text-white">
+          <span className="mb-3 sm:text-center text-black dark:text-white text-xs">
             © 2024
             <Link
               href="https://evanstyles.com"
@@ -125,7 +125,7 @@ export default function Footer() {
             </Link>
             | Todos los derechos reservados | Desarrollado por
             <Link
-              href="https://santiagosalas.com"
+              href="https://www.instagram.com/santi.salasb/"
               className="hover:underline font-bold text-black dark:text-white"
               target="_blank"
             >

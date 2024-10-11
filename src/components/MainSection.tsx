@@ -13,7 +13,6 @@ export default function MainSection() {
             En Evan Styles te ofrecemos la mejor asesoría de imagen y barbería
             en Pasto. ¡Haz tu cita ahora! ¡Te esperamos! 🚀
           </p>
-          {/* Botón en versión escritorio */}
           <div className="hidden lg:block mt-6">
             <Link
               href="https://wa.me/573507505606"
@@ -33,7 +32,6 @@ export default function MainSection() {
             className="block w-full h-full object-cover object-center rounded-lg"
           />
         </div>
-        {/* Botón en versión móvil */}
         <div className="flex justify-center lg:hidden mt-4">
           <Link
             href="https://wa.me/573507505606"
