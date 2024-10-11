@@ -21,7 +21,7 @@ export default function RootLayout({
         <meta name="author" content="Evan Styles" />
         <meta
           name="keywords"
-          content="barbería, asesoría de imagen, Pasto, Evan Styles"
+          content="barbería, peluqueria, asesoría de imagen, Pasto, Evan Styles"
         />
         <meta
           property="og:title"
